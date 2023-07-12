@@ -1,0 +1,18 @@
+def WindowtoViewport(x_w, y_w, x_wmax, y_wmax,x_wmin, y_wmin, x_vmax,y_vmax, x_vmin, y_vmin): 
+    sx = (x_vmax - x_vmin) / (x_wmax - x_wmin) 
+    sy = (y_vmax - y_vmin) / (y_wmax - y_wmin) 
+    x_v = x_vmin + ((x_w - x_wmin) * sx) 
+    y_v = y_vmin + ((y_w - y_wmin) * sy) 
+    print("The point on viewport:(", int(x_v),",", int(y_v), ")") 
+
+x_wmax = int(input("Enter Start x_wmax: ")) 
+y_wmax = int(input("Enter Start y_wmax: ")) 
+x_wmin = int(input("Enter Start x_wmin: ")) 
+y_wmin = int(input("Enter Start y_wmin: ")) 
+x_vmax = int(input("Enter Start x_vmax: ")) 
+y_vmax = int(input("Enter Start y_vmax: ")) 
+x_vmin = int(input("Enter Start x_vmin: ")) 
+y_vmin = int(input("Enter Start y_vmin: ")) 
+x_w = int(input("Enter Start x_w: ")) 
+y_w = int(input("Enter Start y_x: ")) 
+WindowtoViewport(x_w, y_w, x_wmax, y_wmax,x_wmin, y_wmin, x_vmax,y_vmax, x_vmin, y_vmin)
