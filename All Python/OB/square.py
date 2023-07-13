@@ -1,0 +1,17 @@
+import turtle
+
+t=turtle.Turtle() 
+t.screen.bgcolor("white") 
+t.color("red") 
+t.width(3)
+t.speed(100) 
+t.fd(180)
+t.lt(90)
+t.fd(180)
+t.lt(90)
+t.fd(180)
+t.lt(90)
+t.fd(180)
+t.lt(90)
+t.ht()
+turtle.done()
